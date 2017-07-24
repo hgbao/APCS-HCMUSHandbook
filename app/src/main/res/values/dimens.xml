@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+
+    <dimen name="copy_right_size">20dp</dimen>
+
+    <dimen name="loading_text_size">20dp</dimen>
+    <dimen name="loading_logo_size">250dp</dimen>
+
+    <dimen name="navigation_main_avatar_size">60dp</dimen>
+    <dimen name="navigation_main_name_size">25dp</dimen>
+    <dimen name="navigation_main_cover_size">150dp</dimen>
+    <dimen name="main_text_size">25dp</dimen>
+
+    <!-- Size for list views -->
+    <dimen name="news_icon_size">70dp</dimen>
+
+    <dimen name="scholarship_name_size">25dp</dimen>
+    <dimen name="scholarship_date_size">15dp</dimen>
+
+    <dimen name="entertainment_avatar_size">150dp</dimen>
+    <dimen name="entertainment_name_size">25dp</dimen>
+    <dimen name="entertainment_address_size">15dp</dimen>
+
+    <!-- Size for detail pages -->
+    <dimen name="detail_title_size">30dp</dimen>
+    <dimen name="detail_subtitle_size">25dp</dimen>
+    <dimen name="detail_text_size">20dp</dimen>
+    <dimen name="detail_map_size">250dp</dimen>
+
+    <!-- Size for other options -->
+    <dimen name="other_size">150dp</dimen>
+
+</resources>

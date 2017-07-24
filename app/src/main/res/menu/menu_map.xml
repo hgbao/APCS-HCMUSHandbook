@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hgbao.hcmushandbook.MapActivity">
+    <item
+        android:id="@+id/map_mylocation"
+        android:icon="@drawable/ic_mylocation"
+        android:title="@string/action_mylocation"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/map_direction"
+        android:icon="@drawable/ic_direction"
+        android:title="@string/action_direction"
+        app:showAsAction="always" />
+</menu>

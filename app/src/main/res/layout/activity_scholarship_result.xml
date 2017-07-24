@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgbao.hcmushandbook.ScholarshipActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả học bổng Nguyễn Điền - Bùi Minh Trực"
+            android:textStyle="bold"
+            android:textSize="@dimen/detail_title_size"
+            android:maxLines="2"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtResultScholarshipName" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Studying abroad"
+            android:textStyle="italic"
+            android:textSize="@dimen/detail_text_size"
+            android:gravity="end"
+            android:id="@+id/txtResultScholarshipType" />
+
+        <View
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_scholarship_about"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Kết quả học bổng Nguyễn Điền - Bùi Minh Trực"
+            android:textStyle="italic"
+            android:textColor="#0645AD"
+            android:textSize="@dimen/detail_text_size"
+            android:maxLines="1"
+            android:id="@+id/txtResultScholarshipAbout" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(25/08/2015)"
+            android:textSize="@dimen/detail_text_size"
+            android:gravity="end"
+            android:id="@+id/txtResultScholarshipDate" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_scholarship_result_button"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="@dimen/detail_text_size"
+            android:id="@+id/btnScholarshipResult" />
+    </LinearLayout>
+</LinearLayout>

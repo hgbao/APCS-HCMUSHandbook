@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgbao.hcmushandbook.ActActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buổi giao lưu với GS. Smoot"
+            android:textSize="@dimen/detail_title_size"
+            android:maxLines="2"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtDetailActivityName" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_act_type1"
+            android:textStyle="italic"
+            android:textSize="@dimen/detail_text_size"
+            android:gravity="end"
+            android:id="@+id/txtDetailActivityType" />
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_scholarship_about"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Buổi giao lưu với GS. Smoot"
+            android:textStyle="italic"
+            android:textColor="#0645AD"
+            android:textSize="@dimen/detail_text_size"
+            android:maxLines="1"
+            android:id="@+id/txtDetailActivityAbout" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(25/08/2015)"
+            android:textSize="@dimen/detail_text_size"
+            android:gravity="end"
+            android:id="@+id/txtDetailActivityDate" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_activity_submit_button"
+            android:textAllCaps="false"
+            android:textSize="@dimen/detail_text_size"
+            android:id="@+id/btnActivitySummit" />
+
+        <TextView
+            android:id="@+id/textViewActRemind"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_scholarship_remind"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_activity_occur"
+                android:textAllCaps="false"
+                android:textSize="@dimen/detail_text_size"
+                android:id="@+id/btnRemindOccur" />
+
+            <TextView
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(20/08/2015)"
+                android:textStyle="italic"
+                android:textSize="@dimen/detail_text_size"
+                android:id="@+id/txtDetailActivityOccur" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

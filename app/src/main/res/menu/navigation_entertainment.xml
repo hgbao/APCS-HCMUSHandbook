@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/entType1"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_ent_type1" />
+        <item
+            android:id="@+id/entType2"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_ent_type2" />
+        <item
+            android:id="@+id/entType3"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_ent_type3" />
+    </group>
+</menu>

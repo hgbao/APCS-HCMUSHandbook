@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hgbao.hcmushandbook" >
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="ANDROID.PERMISSION.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <permission
+        android:name="com.hgbao.hcmushandbook.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hgbao.hcmushandbook.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.hgbao.hcmushandbook.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme.Base" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAJREtiJQOxkC--DfraNv1Cjb1RXj2BXNw" />
+        <!-- For release key: AIzaSyAWuLS0CLxkaWOwvvia2N2lMRjOL3enlBA -->
+
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/app_id" />
+        </activity>
+        <activity
+            android:name=".ActActivity"
+            android:parentActivityName=".OptionListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".OptionListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyMaterialTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".EntertainmentActivity"
+            android:parentActivityName=".OptionListActivity"
+            android:theme="@style/MyMaterialTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".ScholarshipActivity"
+            android:parentActivityName=".OptionListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".BusActivity"
+            android:parentActivityName=".OtherActivity"
+            android:theme="@style/MyMaterialTheme.ActionBar">
+        </activity>
+        <activity
+            android:name=".OtherActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyMaterialTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/MyMaterialTheme.ActionBar" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.hgbao.hcmushandbook" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+    </application>
+
+</manifest>

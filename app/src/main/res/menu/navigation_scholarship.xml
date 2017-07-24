@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/scholarship_group_type"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/schType1"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_sch_type1" />
+        <item
+            android:id="@+id/schType2"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_sch_type2" />
+        <item
+            android:id="@+id/schType3"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_sch_type3" />
+    </group>
+    <group
+        android:id="@+id/scholarship_group_result"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/schResult"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_sch_type4" />
+    </group>
+    <group
+        android:id="@+id/scholarship_group_expire"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/schExpired"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_sch_expire" />
+    </group>
+
+</menu>

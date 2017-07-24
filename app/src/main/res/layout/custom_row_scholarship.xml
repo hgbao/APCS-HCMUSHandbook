@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="1dp"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/darker_gray"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:scaleType="fitCenter"
+                android:layout_width="@dimen/news_icon_size"
+                android:layout_height="@dimen/news_icon_size"
+                android:src="@drawable/sch_support"
+                android:id="@+id/imgScholarshipType" />
+            <TextView
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="Học bổng Nguyễn Điền - Bùi Minh Trực"
+                android:textSize="@dimen/scholarship_name_size"
+                android:maxLines="2"
+                android:minLines="2"
+                android:gravity="center_vertical"
+                android:id="@+id/txtScholarshipName" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="italic"
+            android:text="(25/08/2015)"
+            android:textSize="@dimen/scholarship_date_size"
+            android:gravity="center_vertical|end"
+            android:id="@+id/txtScholarshipDate" />
+    </LinearLayout>
+
+</LinearLayout>

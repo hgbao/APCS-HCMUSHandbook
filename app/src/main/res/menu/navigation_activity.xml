@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/activity_group_type"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/actType1"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_act_type1" />
+        <item
+            android:id="@+id/actType2"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_act_type2" />
+        <item
+            android:id="@+id/actType3"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_act_type3" />
+    </group>
+    <group
+        android:id="@+id/activity_group_result"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/actResult"
+            android:checked="true"
+            android:icon="@drawable/ic_checkbox_check"
+            android:title="@string/filter_act_type4" />
+    </group>
+</menu>

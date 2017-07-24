@@ -1,0 +1,65 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgbao.hcmushandbook.OtherActivity"
+    android:weightSum="4">
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center">
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:layout_width="@dimen/other_size"
+            android:layout_height="@dimen/other_size"
+            android:background="@drawable/ic_bus"
+            android:id="@+id/btnBus" />
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:layout_width="@dimen/other_size"
+            android:layout_height="@dimen/other_size"
+            android:background="@drawable/ic_facebook"
+            android:id="@+id/btnFacebook" />
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="@dimen/other_size"
+            android:layout_height="@dimen/other_size"
+            android:background="@drawable/ic_web"
+            android:id="@+id/btnWeb" />
+
+        <ImageButton
+            android:layout_width="@dimen/other_size"
+            android:layout_height="@dimen/other_size"
+            android:background="@drawable/ic_doan"
+            android:id="@+id/btnDoan" />
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="@dimen/other_size"
+            android:layout_height="@dimen/other_size"
+            android:background="@drawable/ic_mail"
+            android:id="@+id/btnMail" />
+
+        <ImageButton
+            android:layout_width="@dimen/other_size"
+            android:layout_height="@dimen/other_size"
+            android:background="@drawable/ic_call"
+            android:id="@+id/btnCall" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="hello_world">Chào thế giới</string>
+    <string name="app_name">HCMUS Handbook</string>
+    <string name="app_id">1687961114771211</string>
+    <string name="copy_right">2015 @CS426</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_exit">Thoát</string>
+    <string name="action_photo">Ảnh của tôi</string>
+    <string name="action_logout">Đăng xuất</string>
+    <string name="action_notification">Nhận thông báo</string>
+    <string name="action_mylocation">Vị trí của tôi</string>
+    <string name="action_direction">Tìm đường</string>
+
+    <string name="message_new">Tin tức mới!</string>
+    <string name="message_new_activity">Hoạt động mới.</string>
+    <string name="message_new_scholarship">Học bổng mới.</string>
+    <string name="message_new_entertainment">Địa điểm mới.</string>
+    <string name="message_new_photo">Hình ảnh mới.</string>
+
+    <string name="message_success">Thành công!</string>
+    <string name="message_succeed_register">Bạn sẽ nhận được thông báo khi có tin tức mới</string>
+    <string name="message_succeed_unregister">Bạn sẽ không nhận được thông báo khi có tin tức mới</string>
+    <string name="message_error">Lỗi! Vui lòng thử lại sau</string>
+    <string name="message_cancel">Bạn đã hủy tiến trình</string>
+    <string name="message_error_network">Điện thoại của bạn hiện không kết nối internet</string>
+    <string name="message_error_map">Không thể tạo Google Map</string>
+    <string name="message_error_gps">GPS của bạn hiện đang tắt</string>
+
+    <string name="filter_type">Lọc tin tức</string>
+    <string name="filter_sch_type1">Học bổng hỗ trợ</string>
+    <string name="filter_sch_type2">Học bổng dài hạn</string>
+    <string name="filter_sch_type3">Học bổng du học</string>
+    <string name="filter_sch_type4">Thông báo/Kết quả</string>
+    <string name="filter_sch_expire">Hiển thị tin quá hạn</string>
+    <string name="filter_ent_type1">Quán ăn sáng/trưa</string>
+    <string name="filter_ent_type2">Cafe/Nhà hàng</string>
+    <string name="filter_ent_type3">Khác</string>
+    <string name="filter_act_type1">Hội thảo/Trao đổi</string>
+    <string name="filter_act_type2">Cuộc thi</string>
+    <string name="filter_act_type3">Tình nguyện</string>
+    <string name="filter_act_type4">Thông báo/Kết quả</string>
+
+    <string name="main_activity">Hoạt động</string>
+    <string name="main_scholarship">Học bổng</string>
+    <string name="main_entertainment">Địa điểm</string>
+    <string name="main_other">Khác</string>
+
+    <string name="detail_scholarship_about">Chi tiết:</string>
+    <string name="detail_scholarship_submit">Đăng ký:</string>
+    <string name="detail_scholarship_result">Kết quả:</string>
+    <string name="detail_scholarship_result_button">Mở link/tệp đính kèm</string>
+    <string name="detail_scholarship_result_error">Không có link/tệp đính kèm</string>
+    <string name="detail_scholarship_submit_button">Đăng ký qua email</string>
+    <string name="detail_scholarship_submit_error">Chỉ nhận đăng ký trực tiếp</string>
+    <string name="detail_scholarship_remind">Nhắc nhở tôi:</string>
+    <string name="detail_scholarship_deadline">Hạn chót</string>
+    <string name="detail_scholarship_receive">Ngày nhận kết quả</string>
+    <string name="detail_scholarship_expired">Đã quá hạn!</string>
+
+    <string name="detail_activity_submit_button">Đăng ký</string>
+    <string name="detail_activity_occur">Ngày diễn ra sự kiện</string>
+
+    <string name="detail_entertainment_address">Đia chỉ:</string>
+    <string name="detail_entertainment_description">Chi tiết:</string>
+    <string name="detail_entertainment_rating">Đánh giá:</string>
+    <string name="detail_entertainment_website">Website:</string>
+</resources>

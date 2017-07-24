@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/main_group_facebook"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_file"
+            android:icon="@drawable/ic_photo"
+            android:title="@string/action_photo" />
+        <item
+            android:id="@+id/main_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/action_logout" />
+    </group>
+
+    <group
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/main_notification"
+            android:checked="false"
+            android:icon="@drawable/ic_checkbox_uncheck"
+            android:title="@string/action_notification" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/action_exit" />
+    </group>
+
+</menu>

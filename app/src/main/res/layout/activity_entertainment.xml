@@ -1,0 +1,167 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgbao.hcmushandbook.EntertainmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgDetailEntertainment"
+                android:layout_width="@dimen/entertainment_avatar_size"
+                android:layout_height="@dimen/entertainment_avatar_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/demo_entertainment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/entertainment_avatar_size"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/txtDetailEntertainmentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:textStyle="bold"
+                    android:text="KFC - Nowzone"
+                    android:textSize="@dimen/detail_title_size" />
+
+                <TextView
+                    android:id="@+id/txtDetailEntertainmentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cafe/Restaurant"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/detail_text_size"
+                    android:gravity="end|bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_entertainment_rating"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size"/>
+
+        <RatingBar
+            android:id="@+id/ratingDetailEntertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDetailEntertainmentVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(0 votes)"
+            android:textStyle="italic"
+            android:textSize="@dimen/detail_text_size" />
+
+        <View
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_entertainment_description"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size"/>
+        <TextView
+            android:id="@+id/txtDetailEntertainmentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="- Giờ mở cửa: 09:00 AM - 10:00 PM\n- Giá: 30.000đ - 88.000đ"
+            android:textSize="@dimen/detail_text_size" />
+
+        <View
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_entertainment_address"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size" />
+        <TextView
+            android:id="@+id/txtDetailEntertainmentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textStyle="italic"
+            android:textColor="#0645AD"
+            android:text="Nowzone, 235 Nguyễn Văn Cừ, P. Nguyễn Cư Trinh, Quận 1, TP. HCM"
+            android:textSize="@dimen/detail_text_size"/>
+        <fragment
+            android:id="@+id/mapEntertainment"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_map_size"/>
+
+        <View
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_entertainment_website"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_subtitle_size" />
+        <TextView
+            android:id="@+id/txtDetailEntertainmentWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KFC - Nowzone"
+            android:clickable="true"
+            android:textStyle="italic"
+            android:textColor="#0645AD"
+            android:maxLines="1"
+            android:textSize="@dimen/detail_text_size"/>
+
+    </LinearLayout>
+</ScrollView>
